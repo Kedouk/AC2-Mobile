@@ -1,0 +1,115 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerenciador de Livros"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edtBusca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar livro pelo título"
+        android:singleLine="true"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spFiltroGenero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/txtQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total de livros: 0"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:textColor="#333333" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar / Editar Livro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp" />
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título do livro"
+        android:singleLine="true"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/edtAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor"
+        android:singleLine="true"
+        android:inputType="textCapWords" />
+
+    <Spinner
+        android:id="@+id/spGenero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <EditText
+        android:id="@+id/edtAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ano de publicação"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <Spinner
+        android:id="@+id/spStatus"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <CheckBox
+        android:id="@+id/chkFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Livro favorito" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Livro" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meus Livros"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp" />
+
+    <ListView
+        android:id="@+id/listaLivros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
